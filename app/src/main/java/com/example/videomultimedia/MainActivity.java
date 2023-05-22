@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         //We add here the name's video we want to play
+        // for that we add it to the raw directory and with the same name, we add the name where insertvideonamehere is written.
         video = (VideoView) findViewById(R.id.videoView);
         String path = "android.resource://" + getPackageName() + "/" + R.raw.insertvideonamehere;
         video.setVideoURI(Uri.parse(path));
